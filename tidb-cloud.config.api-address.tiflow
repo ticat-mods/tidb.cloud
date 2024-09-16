@@ -1,0 +1,14 @@
+### file: tidb-cloud.config.api-address.tiflow
+###
+help = toolbox to config tidb cloud api address
+abbr = tidb-cloud.conf|cfg.api-addr|addr
+
+### file: tidb-cloud.config.api-address.dev.tiflow
+###
+help = config tidb cloud api address to dev env
+tag = config
+abbr = tidb-cloud.config.api-address.dev
+
+[val2env]
+tidb-cloud.address.api.legacy = https://api.dev.tidbcloud.com
+tidb-cloud.address.api.v1beta1 = https://serverless.dev.tidbapi.com

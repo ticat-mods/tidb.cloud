@@ -1,0 +1,11 @@
+help = config apikey for tidb cloud
+tag = config
+abbr = tidb-cloud.conf|cfg.auth|apikey
+
+[args]
+public-key|public|pub = ''
+private-key|private|pri = ''
+
+[arg2env]
+tidb-cloud.auth.public-key = public-key
+tidb-cloud.auth.private-key = private-key
