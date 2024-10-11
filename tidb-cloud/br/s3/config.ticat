@@ -1,0 +1,16 @@
+help = config s3 for br
+abbr = conf|cfg
+
+[arg]
+s3-bucket-name|bucket-name|name = ''
+s3-bucket-path|bucket-path|path = ''
+s3-access-key|access|ak = ''
+s3-secret-key|secret|sk = ''
+s3-session-token|token|tk = ''
+
+[arg2env]
+s3.bucket.name = s3-bucket-name
+s3.bucket.path = s3-bucket-path
+s3.auth.access-key = s3-access-key
+s3.auth.secret-key = s3-secret-key
+s3.auth.session-token = s3-session-token

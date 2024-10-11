@@ -1,0 +1,34 @@
+help = backup data of a tidb cloud cluster to a s3 bucket
+
+[arg]
+db-name|database|db = *
+mysql-host|host|h = 127.0.0.1
+mysql-port|port|p = 4000
+mysql-user|user|u = root
+mysql-password|mysql-pwd|password|pwd = ''
+concurrency|threads|t = 8
+
+[arg2env]
+mysql.host = mysql-host
+mysql.port = mysql-port
+mysql.user = mysql-user
+mysql.pwd = mysql-password
+
+tidb.br.concurrency = concurrency
+
+[env]
+mysql.host = read
+mysql.port = read
+mysql.user = read
+mysql.pwd = read
+
+s3.bucket.name = read
+s3.bucket.path = read
+s3.auth.access-key = read
+s3.auth.secret-key = read
+s3.auth.session-token = read
+
+tidb.br.concurrency = read
+
+[dep]
+mysql = to execute backup sql
